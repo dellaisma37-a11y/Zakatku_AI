@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZakaAI - Daftar Akun</title>
+    <!-- Library CSS untuk Ikon Input -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- File CSS kustom kita -->
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+
+    <div class="register-container">
+        <!-- Logo Atas Tengah -->
+        <div class="logo-area center">
+            <i class="fa-solid fa-star-and-crescent"></i> ZakaAI
+        </div>
+        <p class="tagline">Wujudkan keberkahan melalui kecerdasan digital</p>
+
+        <h2>Mulai Perjalanan Anda</h2>
+        <p class="subtitle" style="margin-bottom: 20px;">Silakan lengkapi formulir pendaftaran di bawah ini.</p>
+        
+        <form id="form-register" autocomplete="off">
+            <div class="form-group">
+                <label for="nama-lengkap">Nama Lengkap</label>
+                <div class="input-wrapper">
+                    <i class="fa-regular fa-user"></i>
+                    <input
+                        type="text"
+                        id="nama-lengkap"
+                        name="nama_lengkap"
+                        placeholder="Masukkan nama lengkap Anda"
+                        autocomplete="off"
+                        required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <div class="input-wrapper">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input
+                        type="email"
+                        id="email"
+                        name="register_email"
+                        placeholder="contoh@email.com"
+                        autocomplete="off"
+                        required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="nomor-hp">Nomor HP</label>
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-phone"></i>
+                    <input
+                        type="tel"
+                        id="nomor-hp"
+                        name="nomor_hp"
+                        placeholder="0812xxxxxx"
+                        autocomplete="off"
+                        required>
+                </div>
+            </div>
+
+            <!-- Baris Kata Sandi & Konfirmasi Berdampingan -->
+            <div class="password-row">
+                <div class="form-group">
+                    <label for="password">Kata Sandi</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-lock"></i>
+                        <input
+                            type="password"
+                            id="password"
+                            name="register_password"
+                            placeholder="••••••••"
+                            autocomplete="new-password"
+                            required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="konfirmasi-password">Konfirmasi</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-rotate-left"></i>
+                        <input
+                            type="password"
+                            id="konfirmasi-password"
+                            name="confirm_password"
+                            placeholder="••••••••"
+                            autocomplete="new-password"
+                            required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-options" style="margin-bottom: 20px;">
+                <label class="checkbox-label" style="align-items: flex-start;">
+                    <input type="checkbox" id="terms" required style="margin-top: 3px;">
+                    <span style="font-size: 0.8rem; line-height: 1.4;">
+                        Saya setuju dengan <strong>Ketentuan Layanan</strong> dan <strong>Kebijakan Privasi</strong> ZakaAI.
+                    </span>
+                </label>
+            </div>
+
+            <button type="submit" class="btn-primary">Daftar Sekarang <i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+
+        <p class="auth-footer">Sudah memiliki akun? <a href="login.html" class="switch-auth-link">Masuk di sini</a></p>
+    </div>
+
+    <!-- Menghubungkan logika daftar akun ke Supabase -->
+    <script type="module" src="assets/js/register.js"></script>
+</body>
+</html>

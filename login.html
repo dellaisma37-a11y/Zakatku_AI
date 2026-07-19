@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZakaAI - Selamat Datang</title>
+    <!-- Library CSS untuk Ikon Input -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- File CSS kustom kita -->
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+
+    <div class="login-wrapper">
+        <!-- Sisi Kiri: Banner Hijau Bermotif Spiritual -->
+        <div class="left-side">
+            <div class="logo-area">
+                <i class="fa-solid fa-star-and-crescent"></i> ZakaAI
+            </div>
+            <div>
+                <h1>Harmoni Keuangan Berbasis Spiritual.</h1>
+                <p>Platform cerdas untuk mengelola zakat, infaq, dan perencanaan keuangan syariah dengan bantuan teknologi AI terkini.</p>
+            </div>
+            <div style="font-size: 0.8rem; opacity: 0.7; display: flex; gap: 20px;">
+                <span><i class="fa-solid fa-shield-halved"></i> AMAN & TERPERCAYA</span>
+                <span><i class="fa-solid fa-calculator"></i> PRESISI AI</span>
+            </div>
+        </div>
+        
+        <!-- Sisi Kanan: Form Login -->
+        <div class="right-side">
+            <h2>Selamat Datang</h2>
+            <p class="subtitle">Lanjutkan perjalanan finansial Anda yang penuh berkah.</p>
+            
+            <form id="form-login" autocomplete="off">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <div class="input-wrapper">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input
+                            type="email"
+                            id="email"
+                            name="login_email"
+                            placeholder="nama@email.com"
+                            autocomplete="off"
+                            required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <label for="password">Kata Sandi</label>
+                        <a href="#" class="forgot-link" style="font-size: 0.8rem; margin-bottom: 8px;">Lupa sandi?</a>
+                    </div>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-lock"></i>
+                        <input
+                            type="password"
+                            id="password"
+                            name="login_password"
+                            placeholder="••••••••"
+                            autocomplete="new-password"
+                            required>
+                    </div>
+                </div>
+
+                <div class="form-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="remember-me">
+                        Ingat saya di perangkat ini
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-primary">Masuk <i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+
+            <div class="divider">Atau masuk dengan</div>
+
+            <div class="oauth-group">
+                <button type="button" class="btn-oauth" id="btn-google">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" width="16" alt="Google"> Google
+                </button>
+                <button type="button" class="btn-oauth" id="btn-apple">
+                    <i class="fa-brands fa-apple" style="font-size: 1.1rem;"></i> Apple
+                </button>
+            </div>
+
+            <p class="auth-footer">Belum punya akun? <a href="register.html" class="switch-auth-link">Daftar Sekarang</a></p>
+        </div>
+    </div>
+
+    <!-- Menghubungkan logika masuk akun ke Supabase -->
+    <script type="module" src="assets/js/login.js"></script>
+</body>
+</html>

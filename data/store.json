@@ -1,0 +1,64 @@
+{
+  "user": {
+    "name": "Faisal",
+    "full_name": "Ahmad Faisal",
+    "tier": "Muzakki Silver",
+    "avatar_initials": "AF"
+  },
+  "nisab_perak": 6800000,
+  "chart_series": {
+    "6bulan": {
+      "labels": ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun"],
+      "values": [92000000, 96500000, 101000000, 108000000, 115000000, 128500000]
+    },
+    "3bulan": {
+      "labels": ["Apr", "Mei", "Jun"],
+      "values": [108000000, 115000000, 128500000]
+    },
+    "1tahun": {
+      "labels": ["Jul", "Agu", "Sep", "Okt", "Nov", "Des", "Jan", "Feb", "Mar", "Apr", "Mei", "Jun"],
+      "values": [70000000, 74000000, 78500000, 81000000, 85000000, 89000000, 92000000, 96500000, 101000000, 108000000, 115000000, 128500000]
+    }
+  },
+  "riwayat": [
+    {
+      "id": 3,
+      "jenis": "Perhitungan Zakat Maal",
+      "kategori": "maal",
+      "nominal": 2362500,
+      "tanggal": "05 Juni 2024",
+      "waktu": "20:45 WIB",
+      "status": "Tersimpan"
+    },
+    {
+      "id": 2,
+      "jenis": "Update Saldo Tabungan",
+      "kategori": "tabungan",
+      "nominal": 45000000,
+      "tanggal": "10 Juni 2024",
+      "waktu": "09:15 WIB",
+      "status": "Terverifikasi"
+    },
+    {
+      "id": 1,
+      "jenis": "Perhitungan Zakat Emas",
+      "kategori": "emas",
+      "nominal": 850000,
+      "tanggal": "12 Juni 2024",
+      "waktu": "14:20 WIB",
+      "status": "Tersimpan"
+    }
+  ],
+  "insights": [
+    {
+      "type": "tips",
+      "title": "Tips Keuangan",
+      "text": "Berdasarkan tren saldo Anda, menyisihkan zakat di awal bulan (saat gajian) dapat membantu kedisiplinan finansial sebesar 15%."
+    },
+    {
+      "type": "fiqh",
+      "title": "Hukum Fiqh",
+      "text": "Aset kripto yang Anda miliki saat ini wajib diperhitungkan dalam zakat maal jika sudah melewati haul dan nisab."
+    }
+  ]
+}
